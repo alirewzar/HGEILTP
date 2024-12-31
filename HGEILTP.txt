@@ -1,12 +1,15 @@
+#login and logout to gh
 gh auth login
 gh auth logout
 
-
+#add repository
 gh repo create Repository_Name --private
 gh repo create Repository_Name --public
 
-gh repo delete alirewzar/Repository_Name  --confirm
+#remove repository
+gh repo delete alirewzar/Repository_Name --confirm
 
+#how we can use git
 git init
 git add .
 git commit -m "First commit"
@@ -15,22 +18,9 @@ git branch -M main
 git push -u origin main
 git push
 
-
-
 #show hidden files
 Get-ChildItem -Force
 
 #remove items in power shell
 Remove-Item .git -Force
 
-
-gh repo create Repository_Name  --private
-git init
-git add .
-git commit -m "First commit"
-git remote add origin https://github.com/alirewzar/Repository_Name.git
-git branch -M main
-git push -u origin main
-
-#Exit from terminal-github
-git credential-cache exit
